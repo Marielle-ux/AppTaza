@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_address_search"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:background="@drawable/bg_address_pill"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingStart="14dp"
+    android:paddingEnd="12dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Пин слева -->
+    <ImageView
+        android:id="@+id/iv_pin"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_pin_filled"/>
+
+    <!-- Текст-плейсхолдер -->
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Выберите адрес..."
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#253B40"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Стрелка справа -->
+    <ImageView
+        android:id="@+id/iv_chevron"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/ic_chevron_down"/>
+</LinearLayout>

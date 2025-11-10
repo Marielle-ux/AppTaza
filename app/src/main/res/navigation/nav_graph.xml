@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.apptaza.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <action
+        android:id="@+id/action_splashFragment_to_MainSignInFragment"
+        app:destination="@id/mainSignInFragment" />
+    <fragment
+        android:id="@+id/mainSignInFragment"
+        android:name="com.example.apptaza.mainSignIn.MainSignInFragment"
+        android:label="fragment_main_sign_in"
+        tools:layout="@layout/fragment_main_sign_in">
+        <action
+            android:id="@+id/action_MainSignInFragment_to_signUpFragment"
+            app:destination="@id/SignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.apptaza.signUp.SignUpFragment"
+        android:label="fragment_pass_code"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_passCodeFragment"
+            app:destination="@id/passCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passCodeFragment"
+        android:name="com.example.apptaza.passcode.PassCodeFragment"
+        android:label="fragment_pass_code"
+        tools:layout="@layout/fragment_pass_code" >
+        <action
+            android:id="@+id/action_passCodeFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.apptaza.personalInfo.PersonalInfoFragment"
+        android:label="fragment_personal_info"
+        tools:layout="@layout/fragment_personal_info" >
+        <action
+            android:id="@+id/action_personalInfoFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.apptaza.main.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" />
+</navigation>

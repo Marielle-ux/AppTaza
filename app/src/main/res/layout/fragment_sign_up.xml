@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUp.SignUpFragment">
+
+    <ImageView
+        android:id="@+id/BackgroundForClient"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSignInOrSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/monste_bold"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="@string/signup_or_signin"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bg_input_rounded"
+        android:hint="+7 (---) --- -- --"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:paddingStart="123dp"
+        android:paddingEnd="98dp"
+        android:textColor="@color/signUp_text_color"
+        android:textColorHint="@color/signUp_text_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignInOrSignUp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:backgroundTint="@color/input_text_color"
+        android:fontFamily="@font/monste_bold"
+        android:padding="16dp"
+        android:paddingStart="123dp"
+        android:paddingEnd="98dp"
+        android:text="@string/signup_continue"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumber" />
+
+    <TextView
+        android:id="@+id/tvAgreementPolitics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="@string/agreement"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+
+    <TextView
+        android:id="@+id/tvAgreement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="@string/politics_underlined"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAgreementPolitics" />
+</androidx.constraintlayout.widget.ConstraintLayout>

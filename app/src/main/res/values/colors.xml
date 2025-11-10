@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_light">#D3D3D3</color>   <!-- светло-серый -->
+    <color name="gray_dark">#808080</color>    <!-- тёмно-серый -->
+    <color name="main_background">#1ABC9C</color>
+    <color name="button_SignUpClient">#1BE6BE</color>
+    <color name="button_SignUpCleaner">#2D9CDB</color>
+    <color name="background_MainPage">#0049B2</color>
+    <color name="signUp_text_color">#0A5270</color>
+    <color name="input_text_color">#0F6487</color>
+
+    <color name="primary_teal">#158181</color>
+    <color name="btn_border_blue">#2F74B8</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="cat_border">#2F7EB3</color>
+    <color name="cat_text">#2D3748</color>
+    <color name="cat_fill_selected">#E6F5FB</color>
+    <color name="secondary_text">#6B7280</color>
+
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:color="@color/cat_border" android:state_selected="true"/>
+        <item android:color="@color/cat_border"/>
+    </selector>
+
+    <!-- res/color/category_bg_tint_selector.xml -->
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:color="@color/cat_fill_selected" android:state_selected="true"/>
+        <item android:color="@android:color/transparent"/>
+    </selector>
+</resources>

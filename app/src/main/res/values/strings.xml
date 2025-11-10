@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TazaApp</string>
+    <string name="welcome_to_taza">Добро пожаловать в TAZA!</string>
+    <string name="quote_to_taza">Чистота - в одном клике!</string>
+    <string name="btn_become_client">Стать клиентом</string>
+    <string name="btn_become_cleaner">Стать клинером</string>
+    <string name="signIn_if_u_have_acc">Уже есть аккаунт? Войти</string>
+    <string name="signUp_if_u_dont">Нет аккаунта? Зарегистрироваться</string>
+    <string name="lang_ru">RU</string>
+    <string name="politics_underlined">Условиями обработки данных</string>
+    <string name="agreement">Нажимая продолжить, вы соглашаеетсь с</string>
+    <string name="signup_continue">Продолжить</string>
+    <string name="signup_or_signin">Войдите или зарегистрируйтесь</string>
+    <string name="loading">Загрузка…</string>
+    <string name="code_sent_to">Код был отправлен на номер %1$s</string>
+    <string name="resend_SMS">Переотправить SMS</string>
+    <string name="change_number">Изменить номер</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="verified_kz_underlined">Проверенная платформа №1 в Казахстане</string>
+</resources>

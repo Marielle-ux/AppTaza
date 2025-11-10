@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personalInfo.PersonalInfoFragment">
+
+    <ImageView
+        android:id="@+id/BackgroundPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ClientDataAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/monste_bold"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Ваши данные"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Имя"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ClientDataAdd" />
+
+    <EditText
+        android:id="@+id/InputNameClient"
+        style="@style/InputPill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="62dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameClient" />
+
+    <TextView
+        android:id="@+id/tvSurnameClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Фамилия"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/InputNameClient" />
+
+    <EditText
+        android:id="@+id/InputSurnameClient"
+        style="@style/InputPill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="62dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurnameClient" />
+
+    <TextView
+        android:id="@+id/tvEmailClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/InputSurnameClient" />
+
+    <EditText
+        android:id="@+id/InputEmailClient"
+        style="@style/InputPill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="62dp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="textPassword"
+        android:maxLength="1"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailClient" />
+
+    <LinearLayout
+        android:id="@+id/rowTermsClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputEmailClient"
+        app:layout_constraintWidth_percent="0.86">
+
+        <CheckBox
+            android:id="@+id/cbTermsClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTermsClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:linksClickable="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowPrivacyClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowTermsClient"
+        app:layout_constraintWidth_percent="0.86">
+
+        <CheckBox
+            android:id="@+id/cbPrivacyClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvPrivacyClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:linksClickable="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFinishSignUpClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:backgroundTint="@color/input_text_color"
+        android:fontFamily="@font/monste_bold"
+        android:maxLines="2"
+        android:padding="16dp"
+        android:paddingStart="37dp"
+        android:paddingEnd="30dp"
+        android:text="Завершить\nрегистрацию"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowPrivacyClient" />
+</androidx.constraintlayout.widget.ConstraintLayout>

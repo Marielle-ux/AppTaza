@@ -1,0 +1,15 @@
+<!-- res/drawable/bg_stepper_circle.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#1A2F7EB3"/>
+            <stroke android:width="2dp" android:color="#2F7EB3"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="2dp" android:color="#2F7EB3"/>
+        </shape>
+    </item>
+</selector>

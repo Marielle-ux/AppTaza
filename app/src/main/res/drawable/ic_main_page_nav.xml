@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Задаём нужный размер и центрируем -->
+    <item
+        android:width="220dp"
+        android:height="130dp"
+        android:gravity="center">
+        <bitmap
+            android:src="@drawable/img_main_page"
+            android:antialias="true"
+            android:filter="true"/>
+    </item>
+</layer-list>

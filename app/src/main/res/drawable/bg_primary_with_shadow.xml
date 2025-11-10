@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- shadow -->
+    <item android:top="6dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="28dp"/>
+            <solid android:color="#26000000"/>
+        </shape>
+    </item>
+    <!-- button fill (teal) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="28dp"/>
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#0C7C8E"
+                android:endColor="#0A6C7E"/>
+        </shape>
+    </item>
+</layer-list>

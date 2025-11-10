@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".passcode.PassCodeFragment">
+
+    <ImageView
+        android:id="@+id/BackgroundForPassCode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPassCodeMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/monste_bold"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Введите SMS код"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="27dp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNotification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="@string/code_sent_to"
+        android:textColor="@color/white"
+        android:textFontWeight="500"
+        android:textSize="13sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPassCodeMsg" />
+
+    <EditText
+        android:id="@+id/et1"
+        style="@style/OtpBoxStyle"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        app:layout_constraintEnd_toStartOf="@id/et2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNotification" />
+
+    <View
+        android:id="@+id/dot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/dot_ellipse"
+        app:layout_constraintBottom_toBottomOf="@id/et1"
+        app:layout_constraintEnd_toEndOf="@+id/et1"
+        app:layout_constraintStart_toStartOf="@id/et1"
+        app:layout_constraintTop_toTopOf="@id/et1" />
+
+
+    <EditText
+        android:id="@+id/et2"
+        style="@style/OtpBoxStyle"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="@id/et1"
+        app:layout_constraintEnd_toStartOf="@id/et3"
+        app:layout_constraintStart_toEndOf="@id/et1"
+        app:layout_constraintTop_toTopOf="@id/et1" />
+
+    <View
+        android:id="@+id/dot2"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/dot_ellipse"
+        app:layout_constraintBottom_toBottomOf="@id/et2"
+        app:layout_constraintEnd_toEndOf="@+id/et2"
+        app:layout_constraintStart_toStartOf="@id/et2"
+        app:layout_constraintTop_toTopOf="@id/et2" />
+
+    <EditText
+        android:id="@+id/et3"
+        style="@style/OtpBoxStyle"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="@id/et1"
+        app:layout_constraintEnd_toStartOf="@id/et4"
+        app:layout_constraintStart_toEndOf="@id/et2"
+        app:layout_constraintTop_toTopOf="@id/et1" />
+
+    <View
+        android:id="@+id/dot3"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/dot_ellipse"
+        app:layout_constraintBottom_toBottomOf="@id/et3"
+        app:layout_constraintEnd_toEndOf="@+id/et3"
+        app:layout_constraintStart_toStartOf="@id/et3"
+        app:layout_constraintTop_toTopOf="@id/et3" />
+
+    <EditText
+        android:id="@+id/et4"
+        style="@style/OtpBoxStyle"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:includeFontPadding="false"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="@id/et1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et3"
+        app:layout_constraintTop_toTopOf="@id/et1" />
+
+    <View
+        android:id="@+id/dot4"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/dot_ellipse"
+        app:layout_constraintBottom_toBottomOf="@id/et4"
+        app:layout_constraintEnd_toEndOf="@+id/et4"
+        app:layout_constraintStart_toStartOf="@id/et4"
+        app:layout_constraintTop_toTopOf="@id/et4" />
+
+
+    <!-- Spacing between OTP boxes -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <!-- (Spacing is set in style via margins) -->
+
+    <!-- Resend + timer -->
+    <LinearLayout
+        android:id="@+id/CodePartSending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et1">
+
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            tools:paintFlags="8"
+            android:clickable="true"
+            android:text="@string/resend_SMS"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="14sp" /> <!-- underline -->
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monste_bold"
+            android:text="осталось 00:59"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_button_with_shadow"
+        android:backgroundTint="@color/input_text_color"
+        android:fontFamily="@font/monste_bold"
+        android:padding="16dp"
+        android:paddingStart="123dp"
+        android:paddingEnd="98dp"
+        android:text="@string/signup_continue"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CodePartSending" />
+
+    <TextView
+        android:id="@+id/tvChangeNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="@string/change_number"
+        android:clickable="true"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnContinue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

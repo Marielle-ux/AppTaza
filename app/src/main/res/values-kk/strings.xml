@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TazaApp</string>
+    <string name="welcome_to_taza">TAZA-ға қош келдіңіз!</string>
+    <string name="quote_to_taza">Тазалық - бір басу қана!</string>
+    <string name="btn_become_client">Клиент болу</string>
+    <string name="btn_become_cleaner">Тазалықшы болу</string>
+    <string name="signIn_if_u_have_acc">Аккаунтыңыз бар ма? Кіру</string>
+    <string name="signUp_if_u_dont">Аккаунтыңыз жок па? Тіркелу</string>
+    <string name="lang_ru">KZ</string>
+    <string name="politics_underlined">Деректерді өңдеудің шарттары</string>
+    <string name="agreement">Жалғастыру түймесін басу арқылы сіз келісесіз</string>
+    <string name="signup_continue">Жалғастыру</string>
+    <string name="signup_or_signin">Кіру немесе тіркелу</string>
+    <string name="loading">Жүктеу...</string>
+    <string name="code_sent_to">Код осы нөмірге жіберілді %1$s</string>
+    <string name="resend_SMS">SMS қайта жіберу</string>
+    <string name="change_number">Номерді өзгерту</string>
+    <string name="verified_kz_underlined">Қазақстандағы №1 сенімді платформа</string>
+</resources>
